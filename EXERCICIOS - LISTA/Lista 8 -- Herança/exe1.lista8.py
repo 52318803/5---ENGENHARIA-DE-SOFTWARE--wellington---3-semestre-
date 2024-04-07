@@ -1,4 +1,5 @@
-# FiguraGeometrica com métodos para calcular área e perímetro. subclasses como Quadrado, Retangulo, Triangulo e Circulo
+# FiguraGeometrica com métodos para calcular área e perímetro. subclasses como Quadrado,
+# Retangulo, Triangulo e Circulo
 
 class FigGeo:
     def __init__(self, lado, altura, raio, base):
@@ -32,6 +33,7 @@ class Quadrado(FigGeo):
     def area_Q(self):
         area = self.lado * self.lado
         return area
+    
     def peri_Q(self):
         perimetro = self.lado + self.lado + self.lado + self.lado
         return perimetro
@@ -40,6 +42,7 @@ class Circulo(FigGeo):
     def area_C(self, raio):
         area = 3.14 * raio**2
         return area
+    
     def peri_C(self, raio):
         circunferencia = 2 * raio * 3.14
         return circunferencia
