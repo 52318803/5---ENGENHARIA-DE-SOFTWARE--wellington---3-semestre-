@@ -11,31 +11,42 @@ class Comida:
     
 
 class Fruta(Comida):
-    def __init__(self, nome, sabor, calorias):
+    def __init__(self, nome, sabor, calorias, tipos_F):
         super().__init__(nome, sabor, calorias)
+        self.tipos_F = tipos_F
+
+    def tipos(self):
+        print(f"nome: {self.nome}  | sabor: {self.sabor}  | calorias: {self.calorias}  | alguns tipos: {self.tipos_F}")
+        
+
 
 
 class Vegetal(Comida):
-    def __init__(self, nome, sabor, calorias):
+    def __init__(self, nome, sabor, calorias, tipos_V):
         super().__init__(nome, sabor, calorias)            
+        self.tipos_V = tipos_V         
                  
+    def tipos(self):
+        print(f"nome: {self.nome}  | sabor: {self.sabor}  | calorias: {self.calorias}  | alguns tipos: {self.tipos_V}")
+        
+        
                  
 class Doce(Comida):
-    def __init__(self, nome, sabor, calorias):
+    def __init__(self, nome, sabor, calorias, tipos_D):
         super().__init__(nome, sabor, calorias)            
+        self.tipos_D = tipos_D             
                  
-                 
+    def tipos(self):
+        print(f"nome: {self.nome}  | sabor: {self.sabor}  | calorias: {self.calorias}  | tipos de doce: {self.tipos_D}")
+        
+                    
                 
-produto1 = Fruta("Iphone_Pro_Max_Ultra_LG_TV_168", 185.752, "Celular", "Magalu e Eletros")
-produto2 = Vegetal("Paçoca", 1.90, "Doce", "05/2025", "Carrefur")
-produto3 = Doce("Calça Cargo", 426, "Roupa de baixo", "Vans")
-
-produto1.info_eletro()
-produto2.info_alim()
-produto3.info_vestu()  
-
-'''
+produto1 = Fruta("Laranja", "suculenta", 12.50, "Lima / Pera / Bahia / Rubi...")
+produto2 = Vegetal("Pepino", "de mato", 0.2, "Caipira / Japones / Aonaga / Conserva")
+produto3 = Doce("Fantastíc", "uma delica", 40.000, "Leite / Amargo / Azedo / com Fruta / Amendoin...")
 
 
+produto1.tipos()
+produto2.tipos()
+produto3.tipos()  
 
-'''

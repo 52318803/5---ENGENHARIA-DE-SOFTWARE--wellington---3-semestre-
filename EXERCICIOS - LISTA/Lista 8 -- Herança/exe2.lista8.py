@@ -42,8 +42,10 @@ nome1 = Gerente("Natasha", 19, 18.500, "Vale Combustivel, Vale Alimentação, Gy
 nome2 = Analista("Gio", 21, 15.300, "Formação em ser grande gostosa")
 nome3 = Desenvolvedor("Paloma", 15, 800, "Tenho, o nome é Cacau")
 
-nome1.info_gerente()
-nome2.info_analista()
-nome3.info_desenv()
+print(nome1.info_gerente())
+print()
+print(nome2.info_analista())
+print()
+print(nome3.info_desenv())
 
     
