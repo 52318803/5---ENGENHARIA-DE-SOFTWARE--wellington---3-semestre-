@@ -1,6 +1,8 @@
 # FiguraGeometrica com métodos para calcular área e perímetro. subclasses como Quadrado,
 # Retangulo, Triangulo e Circulo
 
+#ERRADO !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 class FigGeo:
     def __init__(self, lado, altura, raio, base):
         self.altura = altura
