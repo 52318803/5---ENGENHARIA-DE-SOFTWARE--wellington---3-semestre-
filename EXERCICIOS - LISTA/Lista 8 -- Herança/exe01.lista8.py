@@ -3,7 +3,7 @@
 # adicionem atributos específicos a cada tipo de animal de estimação.
 
 
-from telnetlib import GA
+
 
 
 class AnimalEstimacao:

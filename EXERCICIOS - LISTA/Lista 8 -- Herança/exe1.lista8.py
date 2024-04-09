@@ -9,27 +9,7 @@ class FigGeo:
         self.lado = lado
         self.raio = raio
         self.base = base
-        
-       
-'''     
-#Quadrado  
-    def quad(self):
-        pass
-        
-#Retangulo
-    def retan(self):
-        pass
-    
-#Circulo
-    def circ(self):
-        pass
-
-#Triangulo
-    def trian(self):
-        pass
-    
- '''    
-       
+             
         
 class Quadrado(FigGeo):
     def __init__(self, lado, altura, raio, base):
@@ -79,16 +59,19 @@ class Triangulo(FigGeo):
         
     
 
-numero = FigGeo(4, 8, 4, 3)
+numero1 = Quadrado(21, 5, 3, 4)
+numero2 = Circulo(2, 8, 3, 7)
+numero3 = Retangulo(3, 5, 6, 10)
+numero4 = Triangulo(2, 15, 3, 4)
 #print(f"Area: {numero.area}   Perimetro:  {numero.peri}")
 
 
 
-print(Quadrado.area())
+print(numero1.area())
 print()
-print(Circulo.area())
+print(numero2.area())
 print()
-print(Retangulo.area())
+print(numero3.area())
 print()
-print(Triangulo.area())
+print(numero4.area())
 
